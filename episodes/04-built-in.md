@@ -201,10 +201,10 @@ name = 'Feng
 ```
 
 ```error
-  File "<ipython-input-56-f42768451d55>", line 2
+   Cell In[22], line 1
     name = 'Feng
-                ^
-SyntaxError: EOL while scanning string literal
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
 ```
 
 ```python
@@ -213,10 +213,11 @@ age = = 52
 ```
 
 ```error
-  File "<ipython-input-57-ccc3df3cf902>", line 2
+  Cell In[23], line 1
     age = = 52
           ^
 SyntaxError: invalid syntax
+
 ```
 
 - Look more closely at the error message:
@@ -226,10 +227,10 @@ print("hello world"
 ```
 
 ```error
-  File "<ipython-input-6-d1cc229bf815>", line 1
-    print ("hello world"
-                        ^
-SyntaxError: unexpected EOF while parsing
+  Cell In[24], line 1
+    print("hello world"
+                       ^
+SyntaxError: incomplete input
 ```
 
 - The message indicates a problem on first line of the input ("line 1").
